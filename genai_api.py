@@ -1,5 +1,6 @@
 # Streamlit -> possibilita, apenas com Python, criar o frontend e o backend
 # IA: genai
+# pip install google-genai
 
 # Para rodar, digite no terminal:
 # streamlit run genai_api.py
@@ -14,7 +15,7 @@ import os
 st.set_page_config(page_title="Chatbot com IA", page_icon="🤖")
 
 # Título
-st.write("# Chatbot com IA")  # Markdown
+st.title("🤖 Chatbot com IA")
 
 # Chave API (usando variável de ambiente)
 api_key = os.getenv("GOOGLE_API_KEY")
